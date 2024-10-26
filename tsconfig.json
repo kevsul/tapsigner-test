@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2022"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitOverride": true,
+    "outDir": "dist",
+    "paths": {
+      "*": ["src/types/*", "node_modules/@types/*"],
+      "apps/*": ["apps/*"],
+      "src/*": ["src/*"],
+      "test/*": ["test/*"]
+    },
+    "pretty": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "es2022",
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["apps/**/*", "bin/**/*", "src/**/*", "test/**/*"],
+  "ts-node": {
+    // "require": ["tsconfig-paths/register"]
+  }
+}
